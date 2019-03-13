@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/text_adventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/advantage"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_happy" />
+
+        <TextView
+            android:id="@+id/text_science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/science"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_adventure"
+            app:layout_constraintTop_toBottomOf="@+id/text_afraid" />
+
+        <TextView
+            android:id="@+id/text_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/chinese"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_science"
+            app:layout_constraintTop_toBottomOf="@+id/text_love" />
+
+        <TextView
+            android:id="@+id/text_korean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/Korea"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_chinese"
+            app:layout_constraintTop_toBottomOf="@+id/text_suspense" />
+
+        <TextView
+            android:id="@+id/text_western"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/west"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_korean"
+            app:layout_constraintTop_toBottomOf="@+id/text_plot" />
+
+        <TextView
+            android:id="@+id/text_japan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/japan"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_western"
+            app:layout_constraintTop_toBottomOf="@+id/text_act" />
+
+        <TextView
+            android:id="@+id/text_plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/story"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_suspense"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_suspense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/xuanyi"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_love"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_afraid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/afraid"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_happy"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/love"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_afraid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/happy"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/action"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_plot"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/type_search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

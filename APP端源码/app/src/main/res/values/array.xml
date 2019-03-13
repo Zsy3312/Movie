@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_sex">
+        <item>男</item>
+        <item>女 </item>
+    </array>
+    <array name="spinner_year">
+        <item>0-15</item>
+        <item>16-20</item>
+        <item>21-25</item>
+        <item>26-30</item>
+        <item>31-35</item>
+        <item>36-40</item>
+        <item>41-50</item>
+        <item>50+</item>
+    </array>
+    <array name="spinner_study">
+        <item>高中及以下</item>
+        <item>专科</item>
+        <item>本科</item>
+        <item>研究生及以上</item>
+    </array>
+</resources>
